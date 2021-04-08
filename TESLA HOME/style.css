@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    /* font-family: 'Mukta', sans-serif; */
+    font-family: 'Lato', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+/* .lock-scroll{
+    overflow: hidden;
+} */
+/* ---------------NAVIGATION---------------- */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 5.4rem;
+    /* background:#eee; */
+    padding: 0 2rem;
+    position: fixed;
+    z-index: 100;
+}
+.logo img{
+    max-width: 10rem;
+}
+.nav{
+    display: flex;
+}
+.nav-1{
+    padding-left: 10rem;
+    /* position: absolute; */
+
+}
+.nav .nav_items{
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+.nav .nav_items a{
+    color: #292828;
+    letter-spacing: 0.5px;
+}
+
+.nav-2 .nav_items a i{
+    font-size: 2rem;
+    color: #292828;
+}
+.description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.page-info{
+    position: absolute;
+    top: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-btns{
+    position: absolute;
+    bottom: 12%;
+}
+.toggle-menu{
+    position: absolute;
+    width: 30rem;
+    height: 100vh;
+    /* overflow: hidden; */
+    background: #ffffff;
+    right: 0;
+    display: none;
+    z-index: 1000;
+}
+.toggle-list{
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+.cross{
+    position: absolute;
+    font-size: 2rem;
+    color: #292828;
+    top: 2.5rem;
+    right: 3rem;
+}
+.t-items{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2rem;
+    border-bottom: 1px solid #cec7c7;
+    width: 120%;
+}
+.t-items a{
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    color: #1f1e1e;
+}
+/* ------------------HOME------------------- */
+.home{
+    height: 100vh;
+    background-image:  url('images/Desktop-SolarPanels.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+.downarrow{
+    position: absolute;
+    bottom: 2rem;
+}
+.downarrow p i{
+    font-size: 2.5rem;
+    color: #fff;
+    animation: anime 1.75s infinite;
+}
+@keyframes anime{
+    0%,80%{
+        /* opacity: 0; */
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(0.85rem);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    70%{
+        transform: translateY(0.4rem);
+    }
+    100%{
+        /* opacity: 0; */
+        transform: translateY(0);
+    }
+}
+/* -------------INFORMATION------------- */
+.heading{
+    font-size: 3.8rem;
+    color: #464545;
+    font-weight: 700;
+    letter-spacing: 1.24px;
+}
+.subtext{
+    font-size: 1.5rem;
+    color: #757070;
+    margin-top: 0.75rem;
+}
+/* ------------buttons------------- */
+.order{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.28rem;
+    padding: 1.3rem 7rem;
+    margin-right: 2rem;
+    border-radius: 3rem;
+    background: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.learn{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.28rem;
+    padding: 1.3rem 7rem;
+    border-radius: 3rem;
+    background: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* ----------------MODEL S------------------- */
+.model-s{
+    height: 100vh;
+    background: url('images/Desktop-ModelS.jpeg') center no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+.heading-cars{
+    font-size: 4.3rem;
+}
+.subtext-pricing{
+    font-size: 2.2rem;
+    color: #757070;
+}
+/* ------------------MODEL 3--------------------- */
+.model-3{
+    height: 100vh;
+    background: url('images/Desktop-Model3.jpeg') center no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+.delivery{
+    color: #464343;
+    border-bottom: 1px solid #000;
+    transition: all 0.5s ease;
+}
+.delivery:hover{
+    border-bottom: 2px solid #000;
+}
+/* -----------------MODEL X----------------- */
+.model-x{
+    height: 100vh;
+    background: url('images/Desktop-ModelX.jpeg') center no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+/* --------------MODEL Y------------------- */
+.model-y{
+    height: 100vh;
+    background: url('images/Desktop-ModelY.jpeg') center no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+/* ----------------solar roof--------------- */
+.solar-roof{
+    height: 100vh;
+    background: url('images/Desktop-SolarRoof.jpeg') center no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+.accessories{
+    height: 100vh;
+    background: url('images/Desktop-Accessories.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+.accessories .page-btns{
+    bottom: 18%;
+    margin-left: 2rem;
+}
+.accessories .page-btns .order{
+    /* bottom: 20%; */
+    padding: 1rem 9rem;
+    background: rgba(0, 0, 0, 0.9);
+}
+.footer{
+    bottom: 8%;
+    position: absolute;
+}
+.footer .items{
+    margin: 0 1.2rem;
+}
+.footer .items a{
+    color: #464545;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
